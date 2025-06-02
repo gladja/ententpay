@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1055" viewBox="0 0 1920 1055" fill="none">
+  <path d="M1918.5 1.5V981.48C1636.47 1027.29 1309.13 1053.5 960.002 1053.5C610.877 1053.5 283.536 1027.29 1.50189 981.48V1.5H1918.5Z" fill="url(#paint0_radial_4932_2197)"/>
+  <path d="M1918.5 1.5V981.48C1636.47 1027.29 1309.13 1053.5 960.002 1053.5C610.877 1053.5 283.536 1027.29 1.50189 981.48V1.5H1918.5Z" fill="url(#paint1_radial_4932_2197)"/>
+  <path d="M1918.5 1.5V981.48C1636.47 1027.29 1309.13 1053.5 960.002 1053.5C610.877 1053.5 283.536 1027.29 1.50189 981.48V1.5H1918.5Z" fill="url(#paint2_radial_4932_2197)"/>
+  <path d="M1918.5 1.5V981.48C1636.47 1027.29 1309.13 1053.5 960.002 1053.5C610.877 1053.5 283.536 1027.29 1.50189 981.48V1.5H1918.5Z" stroke="url(#paint3_linear_4932_2197)" stroke-width="3"/>
+  <defs>
+    <radialGradient id="paint0_radial_4932_2197" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960.002 -128.5) rotate(90) scale(1511 2499.96)">
+      <stop offset="0.42097" stop-color="#221486" stop-opacity="0"/>
+      <stop offset="1" stop-color="#221486"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial_4932_2197" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960.002 98.5) rotate(90) scale(1164.5 1654.63)">
+      <stop offset="0.755287" stop-color="#221486" stop-opacity="0"/>
+      <stop offset="1" stop-color="#7162DE"/>
+    </radialGradient>
+    <radialGradient id="paint2_radial_4932_2197" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960.002 98.5) rotate(90) scale(1370 2406.1)">
+      <stop offset="0.677835" stop-color="#FC6701" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FC6701"/>
+    </radialGradient>
+    <linearGradient id="paint3_linear_4932_2197" x1="0.00189209" y1="527.5" x2="1920" y2="527.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="white" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
