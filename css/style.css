@@ -8,41 +8,31 @@
 }
 
 body {
-  /* background: var(--bg); */
-  /* background-image: url('/img/bg-hero.svg'); */
+  background: var(--bg);
 }
-
-/* @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/PTSans-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-} */
 
 .hero {
-  background: var(--bg);
-  background-image: url('/img/hero-bg.svg'), url('/img/hero-star.svg');
-  background-size: cover, 384px;
+  background-image: url('/img/hero-bg.svg'), url('/img/bg - screen 2.svg'),
+    url('/img/hero-img.png');
+  background-size: cover, cover, 680px 900px;
   background-repeat: no-repeat;
-  background-position: center, left top;
+  background-position: center, left top, 900px 30px;
+  padding: 80px 0 160px;
 }
 
+
 .container {
-  width: 960px;
-  padding: 0 16px;
+  width: 950px;
+  padding: 0 10px;
   margin: 0 auto;
-  /* height: 1000px; */
 }
 
 .bg-hero {
   background-image: url('/img/hero-img.png');
-  background-size: contain;
+  background-size: 580px;
   background-repeat: no-repeat;
   background-position: right;
-}
-
-.logo {
-  padding-top: 80px;
+  padding: 80px 0;
 }
 
 .logo-text {
@@ -85,4 +75,48 @@ body {
   line-height: 1.35;
   margin-top: 48px;
   width: 404px;
+}
+
+.hero-btn {
+  color: #efefef;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  padding: 26px 90px;
+  border-radius: 25px;
+  margin-top: 90px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    #6053bd;
+  filter: drop-shadow(0px 5px 0px #6053bd) drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.2));
+  background-blend-mode: lighten, soft-light, normal;
+  box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.25) inset;
+
+
+}
+
+
+.hero-btn::after {
+  content: '';
+  background-image: url('/img/arrow.svg');
+  /* display: flex; */
+
+  width: 32px;
+  height: 30px;
 }
