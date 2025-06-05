@@ -13,6 +13,8 @@
 }
 
 body {
+  overflow-x: hidden;
+
   font-family: Gilroy;
   background: var(--bg);
   background-image: url('../img/bg-m.webp');
@@ -416,12 +418,15 @@ body {
 }
 
 .payment-img {
+  margin-top: 20px;
+
   width: 470px;
   height: 470px;
-  left: -75px;
+  left: -65px;
   position: relative;
 
   @media screen and (min-width: 500px) {
+    margin-top: 0;
     left: 50px;
     width: 510px;
     height: 510px;
