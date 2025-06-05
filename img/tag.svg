@@ -1,0 +1,36 @@
+<svg width="290" height="50" viewBox="0 0 290 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_n_5006_3718)">
+<foreignObject x="-17.8594" y="-25" width="325.718" height="100"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(12.5px);clip-path:url(#bgblur_0_5006_3718_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="25">
+<path d="M267.844 0C278.456 0.000135167 285.712 10.7184 281.771 20.5713L273.771 40.5713C271.493 46.2659 265.978 49.9999 259.844 50H22.155C11.5432 49.9998 4.28712 39.2816 8.22828 29.4287L16.2283 9.42871C18.5063 3.73414 24.0217 9.50274e-05 30.155 0H267.844Z" fill="#7162DE"/>
+<path d="M267.844 0C278.456 0.000135167 285.712 10.7184 281.771 20.5713L273.771 40.5713C271.493 46.2659 265.978 49.9999 259.844 50H22.155C11.5432 49.9998 4.28712 39.2816 8.22828 29.4287L16.2283 9.42871C18.5063 3.73414 24.0217 9.50274e-05 30.155 0H267.844Z" fill="url(#paint0_linear_5006_3718)"/>
+</g>
+<path opacity="0.1" d="M30.1553 1H267.845C277.594 1.00014 284.309 10.693 281.008 19.7676L280.843 20.1992L272.843 40.1992C270.717 45.5144 265.569 48.9999 259.845 49H22.1553C12.4057 48.9999 5.69114 39.3069 8.99219 30.2324L9.15723 29.8008L17.1572 9.80078C19.2168 4.6518 24.1118 1.21939 29.6201 1.00977L30.1553 1Z" stroke="url(#paint1_linear_5006_3718)" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_n_5006_3718" x="7.14062" y="0" width="275.719" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="1 1" stitchTiles="stitch" numOctaves="3" result="noise" seed="1812" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(0, 0, 0, 0.03)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_5006_3718">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<clipPath id="bgblur_0_5006_3718_clip_path" transform="translate(17.8594 25)"><path d="M267.844 0C278.456 0.000135167 285.712 10.7184 281.771 20.5713L273.771 40.5713C271.493 46.2659 265.978 49.9999 259.844 50H22.155C11.5432 49.9998 4.28712 39.2816 8.22828 29.4287L16.2283 9.42871C18.5063 3.73414 24.0217 9.50274e-05 30.155 0H267.844Z"/>
+</clipPath><linearGradient id="paint0_linear_5006_3718" x1="-5.11352" y1="6.84524" x2="251.601" y2="140.027" gradientUnits="userSpaceOnUse">
+<stop offset="0.25" stop-color="#7162DE"/>
+<stop offset="1" stop-color="#FC6701" stop-opacity="0.75"/>
+</linearGradient>
+<linearGradient id="paint1_linear_5006_3718" x1="145" y1="0" x2="145" y2="50" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
