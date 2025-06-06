@@ -358,16 +358,23 @@ body {
   }
 }
 
-.payment-wrap {
-  flex: 1 1 300px;
-  min-width: 300px;
-}
-
 .payment-item:first-child {
   margin-bottom: 195px;
   @media screen and (min-width: 500px) {
     margin-bottom: 139px;
   }
+}
+
+.payment-item:nth-child(2) {
+  margin-bottom: 148px;
+  @media screen and (min-width: 500px) {
+    margin-bottom: 0;
+  }
+}
+
+.payment-wrap {
+  flex: 1 1 300px;
+  min-width: 300px;
 }
 
 .payment-item-sub {
@@ -460,19 +467,36 @@ body {
   height: 150px;
   background-image: url('../img/2frame.webp');
   background-repeat: no-repeat;
-  background-size: 935px;
+  /* background-size: 935px; */
+  background-size: cover;
   background-position: center;
 
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 140px;
+  flex-direction: column;
+  gap: 100px;
   order: 2;
+  margin: 67px 0 197px;
+
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
 
   @media screen and (min-width: 500px) {
+    gap: 140px;
+    justify-content: center;
+    flex-direction: row;
     flex: 1 1 100%;
     order: 3;
     margin: 80px 0 150px;
+
+    background-size: 935px;
+    width: auto;
+    transform: none;
+    left: auto;
+    right: auto;
   }
 }
 
@@ -480,6 +504,11 @@ body {
   color: var(--main-text-color);
   font-size: 48px;
   font-weight: 600;
+  padding-top: 15px;
+
+  @media screen and (min-width: 500px) {
+    padding-top: 0;
+  }
 }
 
 .baner-num {
@@ -505,7 +534,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.1;
-  padding: 26px 75px;
+  padding: 26px 105px;
   border-radius: 25px;
   cursor: pointer;
   border: none;
@@ -531,18 +560,35 @@ body {
 
 .payment-list-sec {
   display: flex;
+  flex-direction: column;
+  order: 2;
+  gap: 26px;
+  margin-top: 67px;
+
+  @media screen and (min-width: 500px) {
+    margin-top: 0;
+    gap: 0;
+    flex-direction: row;
+    order: 3;
+  }
 }
 
 .payment-item-sec {
   color: var(--main-text-color);
-  font-size: 21px;
-  font-weight: 500;
-  width: 220px;
+  font-size: 20px;
+  font-weight: 400;
 
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 138px;
+  padding-left: 35px;
+
+  @media screen and (min-width: 500px) {
+    padding-left: 0;
+    gap: 10px;
+    font-size: 21px;
+    width: 220px;
+    margin-top: 138px;
+  }
 }
 
 .payment-item-sec::before {
