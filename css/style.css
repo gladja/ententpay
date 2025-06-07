@@ -28,9 +28,9 @@ body {
 }
 
 .container {
-  /* max-width: 393px; */
-  /* width: 100%; */
-  width: 393px;
+  max-width: 393px;
+  width: 100%;
+  /* width: 393px; */
   padding: 0 15px;
   margin: 0 auto;
 
@@ -671,7 +671,7 @@ body {
   top: 0;
   right: 0;
   width: 25px;
-  height: 100%;
+  height: 325px;
   background: linear-gradient(to left, #1c1b2bcc 10%, transparent); 
   pointer-events: none;
   z-index: 1;
@@ -746,7 +746,7 @@ body {
 
 .step-card {
   width: 220px;
-  height: 320px;
+  height: 325px;
   background-image: url('../img/card-start.png'),
     url('../img/card-start-bg.png');
   background-repeat: no-repeat;
