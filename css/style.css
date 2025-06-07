@@ -132,12 +132,12 @@ body {
   font-weight: 700;
   padding-top: 0;
   display: block;
-  
+
   background: linear-gradient(95deg, #7162de 24.12%, #fc6701 105.12%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+
   @media screen and (min-width: 500px) {
     width: 450px;
     font-size: 84px;
@@ -617,12 +617,11 @@ body {
 
 .start {
   text-align: center;
-padding-top: 140px;
+  padding-top: 140px;
 
-@media screen and (min-width: 500px) {
-     padding-top: 60px;
-
-   }
+  @media screen and (min-width: 500px) {
+    padding-top: 60px;
+  }
 }
 
 .container > .payment-item-sub {
@@ -643,6 +642,7 @@ padding-top: 140px;
   }
 }
 
+/* start */
 .start-text {
   color: var(--card-text);
   font-size: 20px;
@@ -656,6 +656,106 @@ padding-top: 140px;
     margin: 43px auto 0;
     width: 580px;
   }
+}
+
+/* scroll */
+.scroll-container {
+  position: relative; 
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 100%;
+  background: linear-gradient(to left, #1c1b2bcc 10%, transparent); 
+  pointer-events: none;
+  z-index: 1;
+  
+  @media screen and (min-width: 500px) {
+    display: none;
+  }
+}
+
+.scroll-container::before {
+  /* content: ''; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 100%;
+  background: linear-gradient(to right, #1c1b2bcc 10%, transparent);
+  pointer-events: none;
+  z-index: 1;
+
+  @media screen and (min-width: 500px) {
+    display: none;
+  }
+}
+
+.scroll-wrapper {
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+.steps-scroll {
+  display: flex;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+
+  @media screen and (min-width: 500px) {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.steps-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.step-card {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+
+  @media screen and (min-width: 500px) {
+    min-width: auto;
+    flex: 1 1 200px;
+  }
+}
+/* end scroll */
+
+
+.step-card {
+  width: 220px;
+  height: 320px;
+  background-image: url('../img/card-start.png'),
+    url('../img/card-start-bg.png');
+  background-repeat: no-repeat;
+}
+
+.step-num {
+  color: #6053bd;
+  font-size: 120px;
+  font-weight: 700;
 }
 
 /* switch mobile or  desktop */
