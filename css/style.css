@@ -28,12 +28,15 @@ body {
 }
 
 .container {
+  /* max-width: 393px; */
+  /* width: 100%; */
   width: 393px;
   padding: 0 15px;
   margin: 0 auto;
 
   @media screen and (min-width: 500px) {
     width: 950px;
+    max-width: none;
     padding: 0 10px;
   }
 }
@@ -129,14 +132,14 @@ body {
   font-weight: 700;
   padding-top: 0;
   display: block;
-  width: 450px;
-
+  
   background: linear-gradient(95deg, #7162de 24.12%, #fc6701 105.12%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  
   @media screen and (min-width: 500px) {
+    width: 450px;
     font-size: 84px;
     padding-top: 14px;
   }
@@ -321,7 +324,7 @@ body {
   margin: 12px 0;
   height: 50px;
   background-image: url('../img/title-stroke-mob.webp');
-  background-size: 370px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -329,11 +332,22 @@ body {
   justify-content: center;
   position: relative;
 
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+
   @media screen and (min-width: 500px) {
     background-image: url('../img/title-stroke-comp.webp');
     height: 75px;
-    background-size: auto;
     font-size: 48px;
+
+    background-size: auto;
+    width: auto;
+    transform: none;
+    left: auto;
+    right: auto;
   }
 }
 
