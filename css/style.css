@@ -208,7 +208,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 0;
-  margin-top: 400px;
+  margin-top: 380px;
 
   @media screen and (min-width: 500px) {
     gap: 25px 0;
@@ -373,14 +373,14 @@ body {
 }
 
 .payment-item:first-child {
-  margin-bottom: 195px;
+  margin-bottom: 100px;
   @media screen and (min-width: 500px) {
     margin-bottom: 139px;
   }
 }
 
 .payment-item:nth-child(2) {
-  margin-bottom: 148px;
+  margin-bottom: 100px;
   @media screen and (min-width: 500px) {
     margin-bottom: 0;
   }
@@ -580,7 +580,7 @@ body {
   margin-top: 67px;
 
   @media screen and (min-width: 500px) {
-    margin-top: 0;
+    margin-top: 118px;
     gap: 0;
     flex-direction: row;
     order: 3;
@@ -601,7 +601,6 @@ body {
     gap: 10px;
     font-size: 21px;
     width: 220px;
-    margin-top: 138px;
   }
 }
 
@@ -614,6 +613,49 @@ body {
 
   width: 65px;
   height: 40px;
+}
+
+.start {
+  text-align: center;
+padding-top: 140px;
+
+@media screen and (min-width: 500px) {
+     padding-top: 60px;
+
+   }
+}
+
+.container > .payment-item-sub {
+  margin: 0 auto;
+}
+
+.start-title {
+  color: var(--main-text-color);
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  @media screen and (min-width: 500px) {
+    margin-top: 27px;
+    font-size: 84px;
+    width: 700px;
+  }
+}
+
+.start-text {
+  color: var(--card-text);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 28px auto 0;
+  width: 340px;
+
+  @media screen and (min-width: 500px) {
+    font-size: 28px;
+    margin: 43px auto 0;
+    width: 580px;
+  }
 }
 
 /* switch mobile or  desktop */
