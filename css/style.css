@@ -17,7 +17,7 @@ body {
 
   font-family: Gilroy;
   background: var(--bg);
-  background-image: url('../img/bg-m.webp');
+  background-image: url('../img/bg-m.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -373,14 +373,14 @@ body {
 }
 
 .payment-item:first-child {
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   @media screen and (min-width: 500px) {
     margin-bottom: 139px;
   }
 }
 
 .payment-item:nth-child(2) {
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   @media screen and (min-width: 500px) {
     margin-bottom: 0;
   }
@@ -648,21 +648,27 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.35;
-  margin: 28px auto 0;
+  margin: 28px auto 67px;
   width: 340px;
 
   @media screen and (min-width: 500px) {
     font-size: 28px;
-    margin: 43px auto 0;
+    margin: 43px auto 89px;
     width: 580px;
   }
 }
 
 /* scroll */
 .scroll-container {
-  position: relative; 
+  position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 88px;
+
+  @media screen and (min-width: 500px) {
+    margin-bottom: 100px;
+    overflow: visible;
+  }
 }
 
 .scroll-container::after {
@@ -671,11 +677,12 @@ body {
   top: 0;
   right: 0;
   width: 25px;
-  height: 325px;
-  background: linear-gradient(to left, #1c1b2bcc 10%, transparent); 
+  height: 100%;
+  background: linear-gradient(to left, #1c1b2bcc 10%, transparent);
   pointer-events: none;
   z-index: 1;
-  
+  margin-top: 20px;
+
   @media screen and (min-width: 500px) {
     display: none;
   }
@@ -702,23 +709,21 @@ body {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
-  
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .scroll-wrapper::-webkit-scrollbar {
   display: none;
 }
 
-
 .steps-scroll {
   display: flex;
   gap: 16px;
   scroll-snap-type: x mandatory;
-  padding: 20px 0;
+  padding: 30px 0;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; 
+  scrollbar-width: none;
   -ms-overflow-style: none;
 
   @media screen and (min-width: 500px) {
@@ -743,19 +748,139 @@ body {
 }
 /* end scroll */
 
+.decor-left {
+  display: none;
+
+  @media screen and (min-width: 500px) {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -75px;
+    width: 100px;
+    height: 325px;
+    background-image: linear-gradient(to left, #1d1d29a6, #1d1d29),
+      url('../img/card-left.webp');
+    background-repeat: no-repeat;
+    background-size: 60px 325px;
+    z-index: 2;
+  }
+}
+
+.decor-right {
+  display: none;
+
+  @media screen and (min-width: 500px) {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: -115px;
+    width: 100px;
+    height: 325px;
+    background-image: linear-gradient(to right, #1d1d29a6, #1d1d29),
+      url('../img/card-right.webp');
+    background-repeat: no-repeat;
+    background-size: 60px 325px;
+    z-index: 2;
+  }
+}
+
+.scroll-wrapper::after {
+  content: '';
+  width: 950px;
+  height: 2px;
+  background-image: url(../img/stroke.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 7px;
+
+  position: relative;
+  top: -12px;
+  z-index: -1;
+  /* left: -40%; */
+
+  /* width: 100vw; */
+
+  @media screen and (min-width: 500px) {
+    background-size: cover;
+    width: 930px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 .step-card {
+  text-align: start;
+  color: var(--main-text-color);
   width: 220px;
   height: 325px;
-  background-image: url('../img/card-start.png'),
-    url('../img/card-start-bg.png');
+  background-image: url('../img/card-start-bg.webp');
   background-repeat: no-repeat;
+  position: relative;
+  padding: 26px 24px 43px 20px;
+}
+
+.step-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 325px;
+  background-image: url('../img/card-start.webp');
+  background-repeat: no-repeat;
+  background-size: 220px 325px;
+  z-index: 1;
+}
+
+.step-card::after {
+  content: '';
+  background-image: url('../img/dot.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 60px auto;
 }
 
 .step-num {
-  color: #6053bd;
-  font-size: 120px;
+  color: #a89eea;
+  font-size: 140px;
   font-weight: 700;
+
+  position: absolute;
+  left: 15%;
+  top: 0%;
+  z-index: 0;
+}
+
+.step-title-sub {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: auto;
+  width: 70px;
+}
+
+.step-title {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 127px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-text {
+  color: var(--second-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 12px;
+  position: relative;
+  z-index: 1;
 }
 
 /* switch mobile or  desktop */
