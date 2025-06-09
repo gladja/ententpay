@@ -13,7 +13,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
   font-family: Gilroy;
   background: var(--bg);
@@ -459,9 +459,19 @@ body {
   min-width: 300px;
   position: relative;
   overflow: visible;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+
   order: 3;
 
   @media screen and (min-width: 500px) {
+    width: auto;
+    transform: none;
+    left: auto;
+    right: auto;
+
     order: 2;
   }
 }
@@ -471,7 +481,7 @@ body {
 
   width: 470px;
   height: 470px;
-  transform: translateX(-65px);
+  transform: translateX(-40px);
   position: relative;
 
   @media screen and (min-width: 500px) {
@@ -1152,7 +1162,7 @@ body {
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 273px;
-  
+
   @media screen and (min-width: 500px) {
     background-image: none;
     padding-top: 60px;
@@ -1190,7 +1200,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   padding: 15px 35px;
-  
+
   @media screen and (min-width: 500px) {
     background-image: url('../img/bg-card.webp');
     width: 963px;
