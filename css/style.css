@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 
   font-family: Gilroy;
   background: var(--bg);
@@ -505,7 +505,7 @@ body {
   width: 100vw;
   left: 50%;
   right: 50%;
-  transform: translateX(-52%);
+  transform: translateX(-50%);
   overflow: hidden;
 
   @media screen and (min-width: 500px) {
