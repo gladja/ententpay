@@ -495,7 +495,7 @@ body {
 .payment-img {
   margin-top: 20px;
 
-  width: 470px;
+  /* width: 470px; */
   height: 470px;
   /* transform: translateX(-64px); */
   position: relative;
@@ -505,7 +505,7 @@ body {
   width: 100vw;
   left: 50%;
   right: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-52%);
   overflow: hidden;
 
   @media screen and (min-width: 500px) {
