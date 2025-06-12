@@ -1101,12 +1101,10 @@ body {
   @media screen and (min-width: 500px) {
     background-image: url('../img/bg-form.webp');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 930px 750px;
     padding: 60px 15px 40px;
     width: 100%;
     background-position: top;
-    border-radius: 40px;
-    /* border-left: 2px, solid #d9d9d924; */
   }
 }
 
