@@ -889,13 +889,13 @@ body {
 .step-card::before {
   content: '';
   position: absolute;
-  top: -4px;
+  top: 0px;
   left: 0;
   width: 220px;
   height: 325px;
   background-image: url('../img/card-start.webp');
   background-repeat: no-repeat;
-  background-size: 220px 325px;
+  background-size: 220px 321px;
   z-index: 1;
 }
 
@@ -1048,7 +1048,7 @@ body {
 .support-item-img {
   width: 106px;
   height: 98px;
-  opacity: 0.7;
+  opacity: 0.9;
 
   @media screen and (min-width: 500px) {
     width: 134px;
