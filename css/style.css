@@ -244,7 +244,7 @@ body {
 .card-item:nth-child(5),
 .card-item:nth-child(6) {
   height: 100px;
-  background-image: linear-gradient(#1d1d29a6, #1d1d29), url('../img/card.webp');
+  background-image:  url('../img/card-blur.webp');
 }
 
 .card-item-num {
@@ -824,8 +824,9 @@ body {
     left: -75px;
     width: 100px;
     height: 325px;
-    background-image: linear-gradient(to left, #1d1d29a6, #1d1d29),
-      url('../img/card-left.webp');
+    background-image: url('../img/card-l.webp');
+    /* background-image: linear-gradient(to left, #1d1d29a6, #1d1d29),
+      url('../img/card-left.webp'); */
     background-repeat: no-repeat;
     background-size: 60px 325px;
     z-index: 2;
@@ -842,8 +843,9 @@ body {
     right: -115px;
     width: 100px;
     height: 325px;
-    background-image: linear-gradient(to right, #1d1d29a6, #1d1d29),
-      url('../img/card-right.webp');
+    /* background-image: linear-gradient(to right, #1d1d29a6, #1d1d29),
+      url('../img/card-right.webp'); */
+    background-image: url('../img/card-r.webp');
     background-repeat: no-repeat;
     background-size: 60px 325px;
     z-index: 2;
@@ -1016,15 +1018,16 @@ body {
 }
 
 .support-item:nth-child(7) {
-  background-image: linear-gradient(to right, #1f1a54de, #201a5a00),
-    linear-gradient(#1d1d29a6, #1e1e2c), url(../img/client-blur.webp);
+  background-image:  url('../img/client-blur.webp');
+  /* background-image: linear-gradient(to right, #1f1a54de, #201a5a00),
+    linear-gradient(#1d1d29a6, #1e1e2c), url(../img/client-blur.webp); */
   background-size: 363px 100px;
   height: 120px;
 
   @media screen and (min-width: 500px) {
     /* background-image: linear-gradient( to right, #1d1d29a6,  #201a5a), linear-gradient(#1d1d29a6,  #201a5a), url(../img/client-blur.webp); */
-    background-image: linear-gradient(to right, #1f1a54de, #201a5a00),
-      linear-gradient(#1d1d29a6, #1e1e2c), url(../img/client-blur.webp);
+    /* background-image: linear-gradient(to right, #1f1a54de, #201a5a00),
+      linear-gradient(#1d1d29a6, #1e1e2c), url(../img/client-blur.webp); */
     height: 100px;
     background-size: 455px 100px;
     background-repeat: no-repeat;
@@ -1037,8 +1040,10 @@ body {
   @media screen and (min-width: 500px) {
     display: block;
 
-    background-image: linear-gradient(#1d1d29a6, #1d1d29),
+    background-image: 
       url('../img/client-blur.webp');
+    /* background-image: linear-gradient(#1d1d29a6, #1d1d29),
+      url('../img/client-blur.webp'); */
     height: 100px;
     background-size: 455px 100px;
     background-repeat: no-repeat;
