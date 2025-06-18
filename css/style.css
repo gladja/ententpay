@@ -88,7 +88,12 @@ body {
 
   @media screen and (min-width: 500px) {
     position: relative;
-    left: 100px;
+    left: -50px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    position: relative;
+    left: 200px;
   }
 }
 
@@ -107,8 +112,9 @@ body {
   cursor: pointer;
   border: none;
 
-  background: #fc6701bd;
-  box-shadow: 1px 3px 3px 0px #ffffff40, 0 0 10px #ff660099;
+  /* background: #fc6701bd; */
+  background: #D75A06;
+  box-shadow: 1px 3px 10px 0px #ffffff40, 0 0 10px #ff660099;
   filter: drop-shadow(0px 3px 0px #fc670180) drop-shadow(0px 3px 0px #00000040);
 
   border-radius: 15px;
@@ -199,6 +205,20 @@ body {
     margin-top: 90px;
     gap: 15px;
   }
+
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+background: linear-gradient(180deg, #ffffff1a 0%, #ffffff00 100%),
+    linear-gradient(
+      90deg,
+      #ffffff80 0%,
+      #ffffff00 30%,
+      #ffffff00 70%,
+      #ffffff80 100%
+    ),
+    #6d63b2;
 }
 
 .hero-btn::after {
@@ -630,6 +650,20 @@ body {
     font-size: 28px;
     padding: 26px 90px;
   }
+
+  transition: background 0.3s;
+}
+
+.payment-btn:hover {
+background: linear-gradient(180deg, #ffffff1a 0%, #ffffff00 100%),
+    linear-gradient(
+      90deg,
+      #ffffff80 0%,
+      #ffffff00 30%,
+      #ffffff00 70%,
+      #ffffff80 100%
+    ),
+    #6d63b2;
 }
 
 .payment-list-sec {
