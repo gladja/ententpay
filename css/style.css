@@ -178,7 +178,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.1;
-  padding: 26px 75px;
+  padding: 26px 60px;
   border-radius: 25px;
   margin: 43px auto 0;
   cursor: pointer;
@@ -248,7 +248,7 @@ background: linear-gradient(180deg, #ffffff1a 0%, #ffffff00 100%),
   text-align: center;
   padding: 20px 0;
   background-image: url('../img/card.webp');
-  background-size: 365px;
+  background-size: 360px;
   background-repeat: no-repeat;
   display: flex;
   gap: 20px;
@@ -1248,7 +1248,7 @@ background: linear-gradient(180deg, #ffffff1a 0%, #ffffff00 100%),
 }
 
 .question-btn {
-  padding: 26px 72px;
+  padding: 26px 60px;
   margin-top: 30px;
 }
 
