@@ -26,6 +26,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  background-attachment: scroll;
 
   @media screen and (min-width: 500px) {
     background-image: url('../img/bg-new.jpg');
