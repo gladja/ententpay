@@ -1267,17 +1267,18 @@ background: linear-gradient(180deg, #ffffff1a 0%, #ffffff00 100%),
 .faq {
   color: var(--main-text-color);
   text-align: center;
-  /* background-image: url('../img/bg-faq.webp'); */
+  background-image: url('../img/star.webp');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200px;
+  background-position: center calc(100% - 100px);
   padding-top: 60px;
   padding-bottom: 273px;
-
+  
   @media screen and (min-width: 500px) {
-    background-image: none;
+    background-size: 350px;
+    background-position: center calc(100% - 75px);
     padding-top: 90px;
     padding-bottom: 273px;
-    background-image: none;
   }
 }
 
