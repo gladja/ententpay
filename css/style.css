@@ -670,7 +670,7 @@ background: linear-gradient(180deg, #ffffff1a 0%, #ffffff00 100%),
 }
 
 .baner-text + .payment-btn {
-  width: 86%;
+  width: 90%;
 
   @media screen and (min-width: 500px) {
   width: auto;
